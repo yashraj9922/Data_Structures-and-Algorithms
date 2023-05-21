@@ -84,10 +84,11 @@ class mainArray{
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max) {
-                secondMax = max;
-                max = arr[i];
+                secondMax = max;/*before changing maximum value we need to update secondMax  to max
+                as if max is been assigned newer value then old value of max will be second maximum value*/
+                max = arr[i];//after updating secondmax now update max
             } else if (arr[i] > secondMax && arr[i] != max) {
-                secondMax = arr[i];
+                secondMax = arr[i];     
             }
         }
         return secondMax;
@@ -95,11 +96,19 @@ class mainArray{
     
 
     //moving all zeroes to end of an array
-    public int moveZero(int[] arr){
-        int zero=0;
-        
-
-        return zero;
+    public void moveZero(int[] arr){
+        int j=0;//j will be focusing on element = 0
+        for(int i = 0; i<arr.length; i++)//i will be focusing on non-zero elements
+        {
+            if(arr[i]!=0 && arr[j]==0){
+                int temp = arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+            else if(arr[j]!=0){
+                j++;
+            }
+        }
     }
     
 
