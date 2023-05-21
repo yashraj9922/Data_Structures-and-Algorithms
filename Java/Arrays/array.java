@@ -110,13 +110,28 @@ class mainArray{
             }
         }
     }
+
+
+    //resize an array
+    public int[]/*make sure the return data type should be an array */ resizeArray(int[] arr, int capacity){
+        int temp[] = new int[capacity];
+        for(int i = 0; i<capacity; i++){
+            temp[i]=arr[i];
+        }
+        // arr = temp;
+        // return arr;
+        return temp;
+    }//java is pass by value
     
+    
+
+    //
+
+
 
 
 
 }
-
-
 public class array{
     public static void main(String[] args) {
 
