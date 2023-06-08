@@ -112,6 +112,7 @@ class mainArray{
     }
 
 
+
     //resize an array
     public int[]/*make sure the return data type should be an array */ resizeArray(int[] arr, int capacity){
         int temp[] = new int[capacity];
@@ -123,9 +124,13 @@ class mainArray{
         return temp;
     }//java is pass by value
     
-    
 
-    //
+
+    //given an array of n-1 distint numbers in the range of 1 to n. Find teh missing number in it.
+    public int missingNum(){
+        int miss = 0;
+        return miss;
+    }
 
 
 
@@ -134,6 +139,10 @@ class mainArray{
 }
 public class array{
     public static void main(String[] args) {
-
+        int ar[] = {1,3,2};
+        mainArray obj = new mainArray();
+        // obj.printArray(ar);
+        // obj.findSecondMax(ar);
+        
     }
 }
