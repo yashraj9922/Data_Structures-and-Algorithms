@@ -12,6 +12,7 @@ class mainArray{
     }
 
 
+
     //remove even integers from an array
     public int[] removeEvenInteger(int arr[]){
         int oddCount = 0;
@@ -139,10 +140,9 @@ class mainArray{
 }
 public class array{
     public static void main(String[] args) {
-        int ar[] = {1,3,2};
+        int ar[] = {1,3,2}; 
         mainArray obj = new mainArray();
-        // obj.printArray(ar);
-        // obj.findSecondMax(ar);
-        
+        obj.printArray(ar);
+
     }
 }
