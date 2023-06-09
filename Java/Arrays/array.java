@@ -50,7 +50,7 @@ class mainArray{
 
     //find minimum value in an array
     public int findMinimum(int[] arr){
-        if(arr == null || arr.length ==0){
+        if(arr == null || arr.length == 0){
             throw new IllegalArgumentException("invalid input");
         }
         int min = arr[0];
