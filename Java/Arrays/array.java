@@ -78,7 +78,7 @@ class mainArray{
         max = arr[arr.length-2];
         return max;
     }
-//more efficient way (Time Complexity = n)
+    //more efficient way (Time Complexity = n)
     public int findSecondMax(int[] arr) {
         int max = Integer.MIN_VALUE;
         int secondMax = Integer.MIN_VALUE;
@@ -113,7 +113,6 @@ class mainArray{
     }
 
 
-
     //resize an array
     public int[]/*make sure the return data type should be an array */ resizeArray(int[] arr, int capacity){
         int temp[] = new int[capacity];
@@ -132,10 +131,6 @@ class mainArray{
         int miss = 0;
         return miss;
     }
-
-
-
-
 
 }
 public class array{
