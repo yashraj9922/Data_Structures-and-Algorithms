@@ -80,7 +80,7 @@ class mainArray{
     }
     //more efficient way (Time Complexity = n)
     public int findSecondMax(int[] arr) {
-        int max = Integer.MIN_VALUE;
+        int max = Integer.MIN_VALUE; 
         int secondMax = Integer.MIN_VALUE;
 
         for (int i = 0; i < arr.length; i++) {
@@ -88,7 +88,8 @@ class mainArray{
                 secondMax = max;/*before changing maximum value we need to update secondMax  to max
                 as if max is been assigned newer value then old value of max will be second maximum value*/
                 max = arr[i];//after updating secondmax now update max
-            } else if (arr[i] > secondMax && arr[i] != max) {
+            } 
+            else if (arr[i] > secondMax && arr[i] != max) {
                 secondMax = arr[i];     
             }
         }
