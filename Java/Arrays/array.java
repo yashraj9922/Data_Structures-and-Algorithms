@@ -127,7 +127,7 @@ class mainArray{
     
 
 
-    //given an array of n-1 distint numbers in the range of 1 to n. Find teh missing number in it.
+    //given an array of n-1 distint numbers in the range of 1 to n. Find the missing number in it.
     public int missingNum(){
         int miss = 0;
         return miss;
