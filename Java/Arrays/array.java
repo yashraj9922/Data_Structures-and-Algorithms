@@ -107,7 +107,7 @@ class mainArray{
                 arr[i]=arr[j];
                 arr[j]=temp;
             }
-            else if(arr[j]!=0){
+            if(arr[j]!=0){
                 j++;
             }
         }
@@ -131,7 +131,7 @@ class mainArray{
     public int missingNum(){
         int miss = 0;
         return miss;
-    }
+    } 
 
 }
 

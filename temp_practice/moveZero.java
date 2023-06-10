@@ -13,21 +13,6 @@ public class moveZero {
                 j++;
             }
         }
-        
-        //Anup_dada
-        // int n=arr.length;
-        // for(int i=0;i<n;i++){
-        //         if(arr[i]!=0&&arr[j]==0){
-        //             int temp = arr[i];
-        //             arr[i] = arr[j];
-        //             arr[j] = temp;
-        //             j++;
-        //             continue;
-        //         }
-        //         else{
-        //              continue;
-        //         }
-        //     }
         return arr;
     }
 
