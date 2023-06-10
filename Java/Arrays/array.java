@@ -134,11 +134,14 @@ class mainArray{
     }
 
 }
+
+
+
+
+
+
+
 public class array{
     public static void main(String[] args) {
-        int ar[] = {1,3,2}; 
-        mainArray obj = new mainArray();
-        obj.printArray(ar);
-
     }
 }
