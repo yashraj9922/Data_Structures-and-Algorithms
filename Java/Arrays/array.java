@@ -89,7 +89,7 @@ class mainArray{
                 as if max is been assigned newer value then old value of max will be second maximum value*/
                 max = arr[i];//after updating secondmax now update max
             } 
-            else if (arr[i] > secondMax && arr[i] != max) {
+            if (arr[i] > secondMax && arr[i] != max) {
                 secondMax = arr[i];     
             }
         }
