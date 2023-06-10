@@ -128,18 +128,15 @@ class mainArray{
 
 
     //given an array of n-1 distint numbers in the range of 1 to n. Find the missing number in it.
-    public int missingNum(){
-        int miss = 0;
-        return miss;
+    public int missingNumber(int n, int[] arr){
+        int sum1 = (n*(n+1))/2;
+        int sum2 = 0;
+        for(int i = 0; i<arr.length; i++){
+            sum2 += arr[i];
+        }
+        return sum1 - sum2;
     } 
-
 }
-
-
-
-
-
-
 
 public class array{
     public static void main(String[] args) {
