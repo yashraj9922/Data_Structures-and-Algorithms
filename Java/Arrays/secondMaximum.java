@@ -1,5 +1,3 @@
-package temp_practice;
-
 public class secondMaximum {
     static int findSecondMax(int []arr){
         int max = Integer.MIN_VALUE;

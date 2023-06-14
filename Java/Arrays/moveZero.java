@@ -1,5 +1,3 @@
-package temp_practice;
-
 public class moveZero {
     static int[] zeroAtEnd(int[] arr){
         int j = 0;

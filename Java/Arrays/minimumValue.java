@@ -1,5 +1,3 @@
-package temp_practice;
-
 public class minimumValue {
     static int findMinimum(int[] arr){
         if(arr == null || arr.length == 0){

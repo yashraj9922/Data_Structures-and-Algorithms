@@ -1,5 +1,3 @@
-package temp_practice;
-
 public class printArrays {
     void printArray(int arr[]){
         int len = arr.length;

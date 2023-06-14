@@ -1,5 +1,3 @@
-package temp_practice;
-
 public class removeEvenIntegers {
     static int[] removeEvenInteger(int arr[]){
         int oddCount = 0;

@@ -1,5 +1,3 @@
-package temp_practice;
-
 public class missingNum {
     static int missingNumber(int n, int[] arr){
         int sum1 = (n*(n+1))/2;
