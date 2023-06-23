@@ -1,5 +1,3 @@
-
-
 public class string {
     static boolean isPalindrome(String str){
         char[] charArray = str.toCharArray();
