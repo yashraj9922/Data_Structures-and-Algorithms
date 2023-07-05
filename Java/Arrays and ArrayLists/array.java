@@ -1,10 +1,8 @@
-
 class mainArray {
 
     // Print an Array
     void printArray(int arr[]) {
-        int len = arr.length;
-        for (int i = 0; i < len; i++) {
+        for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
         System.out.println();

@@ -14,8 +14,8 @@ public class string {
    }
 
    public static void main(String[] args) {
-    String string = "madam";
-    boolean result = isPalindrome(string);
+    String str = "madam";
+    boolean result = isPalindrome(str);
     System.out.println(result);
    }
 }
