@@ -31,7 +31,6 @@ public class bubbleSort {
             }
         }
     }
-
     static void printArray(int[] arr, int n) {
         int i;
         System.out.println("Non-Decreasing order: ");
