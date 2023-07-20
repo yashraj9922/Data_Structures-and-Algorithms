@@ -21,16 +21,16 @@ public class selectionSort {
     }
 
     static void selection(int[] arr, int n) {
-        for(int i = 0; i < arr.length - 1; i++){
+        for (int i = 0; i < arr.length - 1; i++) {
             int smallest = i;
-            for(int j = i+1; j < arr.length; j++){
-                if(arr[smallest] > arr[j]){
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[smallest] > arr[j]) {
                     smallest = j;
                 }
             }
-        int temp = arr[smallest];
-        arr[smallest] = arr[i];
-        arr[i] = temp;
+            int temp = arr[smallest];
+            arr[smallest] = arr[i];
+            arr[i] = temp;
         }
     }
 
