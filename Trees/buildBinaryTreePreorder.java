@@ -24,7 +24,7 @@ public class buildBinaryTreePreorder {
         static class BinaryTree {
             static int index = -1;
 
-            public static Node buildTree(int nodes[]) {
+            public Node buildTree(int nodes[]) {
                 index++;
                 if (nodes[index] == -1) {
                     return null;

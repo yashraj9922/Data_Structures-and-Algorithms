@@ -10,7 +10,9 @@ public class traversalBinaryTree {
         Node root = tree.buildTree(nodes);
         // System.out.println(root.data);
         tree.preOrder(root);
+        System.out.println();
         tree.inorder(root);
+        System.out.println();
         tree.postOrder(root);
 
     }
