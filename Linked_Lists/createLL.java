@@ -2,19 +2,20 @@ package Linked_Lists;
 
 public class createLL {
     static Node head;
-    class Node{
+
+    class Node {
         int data;
         Node next;
 
-        Node(int data){
+        Node(int data) {
             this.data = data;
             this.next = null;
         }
     }
 
-    public void addFirst(int data){
+    public void addFirst(int data) {
         Node newNode = new Node(data);
-        if(head == null){
+        if (head == null) {
             head = newNode;
             return;
         }
@@ -22,58 +23,59 @@ public class createLL {
         head = newNode;
     }
 
-    public void addLast(int data){
+    public void addLast(int data) {
         Node newNode = new Node(data);
-        if(head == null){
+        if (head == null) {
             head = newNode;
             return;
         }
         Node currNode = head;
-        while(currNode.next != null){
+        while (currNode.next != null) {
             currNode = currNode.next;
         }
         currNode.next = newNode;
     }
 
-    public void deleteFirst(){
-        if(head == null){
+    public void deleteFirst() {
+        if (head == null) {
             System.out.println("Empty List");
             return;
         }
         head = head.next;
     }
 
-    public void deleteLast(){
-        if(head == null){
+    public void deleteLast() {
+        if (head == null) {
             System.out.println("Empty List");
             return;
         }
-        if(head.next == null){
+        if (head.next == null) {
             head = null;
             return;
         }
         Node secondLast = head;
         Node lastNode = head.next;
 
-        while(lastNode.next != null){
+        while (lastNode.next != null) {
             lastNode = lastNode.next;
             secondLast = secondLast.next;
         }
         secondLast.next = null;
     }
 
-    public static void printLL(){
-        if(head == null){
+    public static void printLL() {
+        if (head == null) {
             System.out.println("List is Empty");
             return;
         }
         Node currNode = head;
-        while(currNode != null){
+        while (currNode != null) {
             System.out.print(currNode.data + " --> ");
             currNode = currNode.next;
         }
         System.out.println("NULL");
     }
+
     public static void main(String[] args) {
         createLL list = new createLL();
         list.addFirst(0);
