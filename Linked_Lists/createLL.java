@@ -35,6 +35,33 @@ public class createLL {
         currNode.next = newNode;
     }
 
+    public void deleteFirst(){
+        if(head == null){
+            System.out.println("Empty List");
+            return;
+        }
+        head = head.next;
+    }
+
+    public void deleteLast(){
+        if(head == null){
+            System.out.println("Empty List");
+            return;
+        }
+        if(head.next == null){
+            head = null;
+            return;
+        }
+        Node secondLast = head;
+        Node lastNode = head.next;
+
+        while(lastNode.next != null){
+            lastNode = lastNode.next;
+            secondLast = secondLast.next;
+        }
+        secondLast.next = null;
+    }
+
     public static void printLL(){
         if(head == null){
             System.out.println("List is Empty");
@@ -52,6 +79,10 @@ public class createLL {
         list.addFirst(0);
         list.addFirst(10);
         list.addLast(110);
+        list.deleteLast();
+        list.deleteFirst();
+        list.addFirst(99);
+        list.addLast(100);
         printLL();
     }
 }
