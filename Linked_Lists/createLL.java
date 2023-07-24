@@ -1,7 +1,12 @@
 package Linked_Lists;
 
 public class createLL {
+    private int size = 0;
     static Node head;
+
+    createLL() {
+        this.size = 0;
+    }
 
     class Node {
         int data;
@@ -10,6 +15,7 @@ public class createLL {
         Node(int data) {
             this.data = data;
             this.next = null;
+            size++;
         }
     }
 
@@ -41,6 +47,7 @@ public class createLL {
             System.out.println("Empty List");
             return;
         }
+        size--;
         head = head.next;
     }
 
@@ -49,6 +56,7 @@ public class createLL {
             System.out.println("Empty List");
             return;
         }
+        size--;
         if (head.next == null) {
             head = null;
             return;
@@ -76,6 +84,10 @@ public class createLL {
         System.out.println("NULL");
     }
 
+    public int getSize() {
+        return size;
+    }
+
     public static void main(String[] args) {
         createLL list = new createLL();
         list.addFirst(0);
@@ -86,5 +98,7 @@ public class createLL {
         list.addFirst(99);
         list.addLast(100);
         printLL();
+        System.out.print("Size of LL: ");
+        System.out.println(list.getSize());
     }
 }
