@@ -2,7 +2,7 @@ package Trees;
 
 import Trees.buildBinaryTreePreorder.Node.BinaryTree;
 
-//BUILDING A BINARY TREE
+//BUILDING A BINARY TREE WITH A PREORDER SEQUENCE
 public class buildBinaryTreePreorder {
     public static void main(String[] args) {
         int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, 6, -1, -1, 7, -1, -1 };
