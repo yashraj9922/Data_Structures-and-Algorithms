@@ -8,7 +8,7 @@ public class towerOfHanoi {
 
         System.out.println("Enter the number of disks: ");
         int n = sc.nextInt();
-        tower(n, 'S', 'H', 'D');
+        tower(n, 'A', 'B', 'C');
     }
 
     public static void tower(int n, char src, char helper, char dest) {
