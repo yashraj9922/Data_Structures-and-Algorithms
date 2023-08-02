@@ -21,14 +21,14 @@ public class insertionSort {
     }
 
     static void insertion(int[] arr, int n) {
-        for(int i = 1; i < arr.length; i++){
+        for (int i = 1; i < arr.length; i++) {
             int j = i - 1;
             int x = arr[i];
-            while(j > -1 && arr[j] > x){
-                arr[j+1] = arr[j];
+            while (j > -1 && arr[j] > x) {
+                arr[j + 1] = arr[j];
                 j--;
             }
-            arr[j+1] = x;
+            arr[j + 1] = x;
         }
     }
 

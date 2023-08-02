@@ -1,13 +1,13 @@
 public class moveZero {
-    static int[] zeroAtEnd(int[] arr){
+    static int[] zeroAtEnd(int[] arr) {
         int j = 0;
-        for(int i = 0; i<arr.length; i++){
-            if(arr[i] != 0 && arr[j] == 0){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != 0 && arr[j] == 0) {
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
-            if(arr[j] != 0){
+            if (arr[j] != 0) {
                 j++;
             }
         }
@@ -15,9 +15,9 @@ public class moveZero {
     }
 
     public static void main(String[] args) {
-        int ar[] = {0,0,45,0,3,5,0,6,34,0,23,0};
+        int ar[] = { 0, 0, 45, 0, 3, 5, 0, 6, 34, 0, 23, 0 };
 
-        int result[] = zeroAtEnd(ar); 
+        int result[] = zeroAtEnd(ar);
         for (int i = 0; i < result.length; i++)
             System.out.print(result[i] + " ");
     }

@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class towerOfHanoi {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Enter the number of disks: ");
         int n = sc.nextInt();
         tower(n, 'A', 'B', 'C');
