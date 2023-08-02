@@ -1,5 +1,3 @@
-package Searching;
-
 public class maxIn2DArray {
     static int max(int[][] arr) {
         int max = Integer.MIN_VALUE;
@@ -12,11 +10,12 @@ public class maxIn2DArray {
         }
         return max;
     }
+
     public static void main(String[] args) {
-        int [][]arr = {
-                {1,2,3},
-                {4,5,6},
-                {7,8,9}
+        int[][] arr = {
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
         };
         System.out.println(max(arr));
     }
