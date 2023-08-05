@@ -14,7 +14,6 @@ public class traversalBinaryTree {
         tree.inorder(root);
         System.out.println();
         tree.postOrder(root);
-
     }
 
     static class Node {
