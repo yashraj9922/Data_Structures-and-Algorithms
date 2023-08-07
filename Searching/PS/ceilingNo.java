@@ -8,9 +8,15 @@ public class ceilingNo {
         System.out.println(ans);
     }
 
+    // return the index of smallest no. >= target
     static int ceiling(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
+
+        // when target is greater than the greatest element in an array
+        if (target > arr[end]) {
+            return -1;
+        }
 
         while (start <= end) {
             int mid = start + (end - start) / 2;
