@@ -15,4 +15,7 @@ public class nextGreatestchar {
         }
         return letters[start % (letters.length - 1)];
     }
+    public static void main(String[] args) {
+        char[] letters = {'a', 'b', 'd' };
+    }
 }
