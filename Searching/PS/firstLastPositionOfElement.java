@@ -4,10 +4,11 @@ public class firstLastPositionOfElement {
     static int[] searchRange(int[] nums, int target) {
         int[] ans = { -1, -1 };
 
-        ans[0] = search(nums, target, true);
-        if (ans[0] != -1) {
-            ans[1] = search(nums, target, false);
-        }
+        int startIndex = search(nums, target, true);
+        int endIndex = search(nums, target, false);
+
+        ans[0] = startIndex;
+        ans[1] = endIndex;
 
         return ans;
     }
