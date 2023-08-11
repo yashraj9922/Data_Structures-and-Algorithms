@@ -1,5 +1,6 @@
 package PS;
 
+// Find the floor of a number in a sorted array => leeetcode 35
 public class flooringNo {
 
     // return the index of greatest no. <= target

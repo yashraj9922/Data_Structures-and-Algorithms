@@ -1,5 +1,6 @@
 package PS;
 
+// Find the ceiling of a number in a sorted array => leeetcode 35
 public class ceilingNo {
     public static void main(String[] args) {
         int[] arr = { 2, 3, 5, 9, 14, 16, 18 };

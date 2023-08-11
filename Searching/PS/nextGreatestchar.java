@@ -1,5 +1,6 @@
 package PS;
 
+// Find the smallest letter greater than target in a sorted array => leeetcode 744
 public class nextGreatestchar {
     public char nextGreatestCharacter(char[] letters, char target) {
         int start = 0;
