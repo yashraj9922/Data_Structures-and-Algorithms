@@ -15,8 +15,9 @@ public class nextGreatestchar {
         }
         return letters[start % (letters.length)];
     }
+
     public static void main(String[] args) {
-        char[] letters = {'a', 'b', 'd' };
+        char[] letters = { 'a', 'b', 'd' };
         char target = 'c';
         nextGreatestchar obj = new nextGreatestchar();
         System.out.println(obj.nextGreatestCharacter(letters, target));
