@@ -23,12 +23,12 @@ public class insertionSort {
     static void insertion(int[] arr, int n) {
         for (int i = 1; i < arr.length; i++) {
             int j = i - 1;
-            int x = arr[i];
-            while (j > -1 && arr[j] > x) {
+            int temp = arr[i];
+            while (j > -1 && arr[j] > temp) {
                 arr[j + 1] = arr[j];
                 j--;
             }
-            arr[j + 1] = x;
+            arr[j + 1] = temp;
         }
     }
 
