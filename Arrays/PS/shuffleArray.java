@@ -1,5 +1,3 @@
-package PS;
-
 // Leetcode 1470. Shuffle the Array
 
 class Solution {
