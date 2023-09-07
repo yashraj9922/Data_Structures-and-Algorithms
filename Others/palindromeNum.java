@@ -1,6 +1,6 @@
 // Leetcode 9. Palindrome Number
 
-package LC;
+package Others;
 
 public class palindromeNum {
     public static void main(String[] args) {
