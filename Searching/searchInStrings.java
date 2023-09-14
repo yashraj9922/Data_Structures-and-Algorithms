@@ -31,7 +31,8 @@ public class searchInStrings {
         for (char ch : str.toCharArray()) {
             if (ch == target) {
                 return true;
-            } // to use for each loop u need array hence to convert string to array we use toCharArray()
+            } // to use for each loop u need array hence to convert string to array we use
+              // toCharArray()
         }
         return false;
     }
