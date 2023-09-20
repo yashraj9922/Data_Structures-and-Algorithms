@@ -1,5 +1,3 @@
-package Searching;
-
 public class searchInRange {
     static int linearsearch(int arr[], int key, int start, int endIdx) {
         if (arr.length == 0) {

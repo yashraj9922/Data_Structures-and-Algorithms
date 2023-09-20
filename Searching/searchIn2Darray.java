@@ -1,5 +1,3 @@
-package Searching;
-
 public class searchIn2Darray {
     static boolean search(int[][] arr, int target) {
         for (int row = 0; row < arr.length; row++) {
