@@ -1,3 +1,5 @@
+package PS;
+
 // Leetcode 27. Remove Element
 
 class Solution {

@@ -1,3 +1,5 @@
+package PS;
+
 // Leetcode 1. Two Sum
 
 // Input: nums = [3,2,4], target = 6

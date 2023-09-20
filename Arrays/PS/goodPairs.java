@@ -1,3 +1,5 @@
+package PS;
+
 // 1512. Number of Good Pairs
 
 class Solution {
