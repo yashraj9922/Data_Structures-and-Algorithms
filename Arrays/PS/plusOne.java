@@ -21,7 +21,7 @@ public class plusOne {
                 }
                 digits[i] = 0;
             }
-            int[] newNumber = new int[n + 1];
+            int[] newNumber = new int[n + 1];// when a new array is created...all the elements are initialized to 0...hence extra 0 is automatically added at the end of array
             newNumber[0] = 1;
             return newNumber;
         }
