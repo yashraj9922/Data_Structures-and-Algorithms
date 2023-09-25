@@ -21,7 +21,6 @@ public class binarySearch {
 
             // find the middle element
             // int mid = (start + end) / 2;
-            // int mid = start + (end - start) / 2;
             int mid = start + (end - start) / 2; // to avoid overflow
 
             // three cases
