@@ -1,9 +1,0 @@
-Q. When to use Binary Search ?
-A.  question of a Sorted Array
-    working with sequence of numbers....ex. square root of a number
-
-ceilingNo.java
-Ceiling Number is a smallest number in an array which is greatest or equal to target number
-
-flooringNo.java
-greatest number in an which is smallest or equal to target number
