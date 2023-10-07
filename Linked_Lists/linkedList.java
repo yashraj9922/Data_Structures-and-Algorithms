@@ -91,6 +91,17 @@ public class linkedList {
         return node;
     }
 
+    public Node findNode(int value) {
+        Node node = head;
+        while (node != null) {
+            if (node.value == value) {
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
+    }
+
     public Node deleteAtLast() {
         if (size <= 1) {
             return deleteAtFirst();
@@ -151,6 +162,9 @@ public class linkedList {
         System.out.println("ll.delNode(2)");
         ll.delNode(2);
         ll.displayLL();
-
+        System.out.println("ll.findNode(100)");
+        System.out.println(ll.findNode(100));
+        System.out.println("ll.findNode(20)");
+        System.out.println(ll.findNode(20));
     }
 }
