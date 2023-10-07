@@ -112,7 +112,7 @@ public class linkedList {
             return deleteAtLast();
         }
 
-        Node prevNode = get(index-1);
+        Node prevNode = get(index - 1);
         Node currentNode = prevNode.next;
         prevNode.next = currentNode.next;
         currentNode.next = null;
