@@ -104,6 +104,22 @@ public class linkedList {
         return temp;
     }
 
+    public Node delNode(int index) {
+        if (index == 0) {
+            return deleteAtFirst();
+        }
+        if (index == size - 1) {
+            return deleteAtLast();
+        }
+
+        Node prevNode = get(index-1);
+        Node currentNode = prevNode.next;
+        prevNode.next = currentNode.next;
+        currentNode.next = null;
+        size--;
+        return currentNode;
+    }
+
     public void displayLL() {
         // instead of traversing original head pointer as head.next we use temp var as
         // it will be out of Scope one function is run and will be reassign to head for
@@ -131,6 +147,9 @@ public class linkedList {
         ll.displayLL();
         System.out.println("ll.deleteAtLast()");
         ll.deleteAtLast();
+        ll.displayLL();
+        System.out.println("ll.delNode(2)");
+        ll.delNode(2);
         ll.displayLL();
 
     }
