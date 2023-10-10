@@ -45,7 +45,7 @@ public class StackArray {
         return ptr == data.length - 1;// pointer is at last index
     }
 
-    private boolean isEmpty() {
+    boolean isEmpty() {
         return ptr == -1;
     }
 
