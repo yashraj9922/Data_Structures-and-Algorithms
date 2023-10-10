@@ -59,7 +59,7 @@ public class QueueLL {
         q.add(4);
         q.add(5);
 
-        while (!q.isEmpty()) {
+        while (!QueueLL.isEmpty()) {
             System.out.println(q.peek());
             q.remove();
         }
