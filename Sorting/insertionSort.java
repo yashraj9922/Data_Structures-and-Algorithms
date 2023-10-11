@@ -22,7 +22,7 @@ public class insertionSort {
     }
 
     static void insertion(int[] arr, int n) {
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 1; i < n; i++) {
             int j = i - 1;
             int temp = arr[i];
             while (j > -1 && arr[j] > temp) {
