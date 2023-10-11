@@ -17,12 +17,12 @@ public class insertionSort {
             arr[i] = sc.nextInt();
         }
         int n = arr.length;
-        insertion(arr, n);
+        insertion(arr);
         printArray(arr, n);
     }
 
-    static void insertion(int[] arr, int n) {
-        for (int i = 1; i < n; i++) {
+    static void insertion(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
             int j = i - 1;
             int temp = arr[i];
             while (j > -1 && arr[j] > temp) {
