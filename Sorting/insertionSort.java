@@ -16,9 +16,8 @@ public class insertionSort {
             System.out.print("Element " + (i + 1) + ": ");
             arr[i] = sc.nextInt();
         }
-        int n = arr.length;
         insertion(arr);
-        printArray(arr, n);
+        printArray(arr);
     }
 
     static void insertion(int[] arr) {
@@ -33,10 +32,10 @@ public class insertionSort {
         }
     }
 
-    static void printArray(int[] arr, int n) {
+    static void printArray(int[] arr) {
         int i;
         System.out.println("Non-Decreasing order: ");
-        for (i = 0; i < n; i++) {
+        for (i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
             // System.out.println();
         }
