@@ -16,11 +16,11 @@ public class selectionSort {
             arr[i] = sc.nextInt();
         }
         int n = arr.length;
-        selection(arr, n);
-        printArray(arr, n);
+        selection(arr);
+        printArray(arr);
     }
 
-    static void selection(int[] arr, int n) {
+    static void selection(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             int smallest = i;
             for (int j = i + 1; j < arr.length; j++) {
@@ -34,10 +34,10 @@ public class selectionSort {
         }
     }
 
-    static void printArray(int[] arr, int n) {
+    static void printArray(int[] arr) {
         int i;
         System.out.println("Non-Decreasing order: ");
-        for (i = 0; i < n; i++) {
+        for (i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
             // System.out.println();
         }
