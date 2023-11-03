@@ -10,18 +10,18 @@ public class plusOne {
         }
     }
 
-
-        static int[] plus(int[] digits) {
-            int n = digits.length;
-            for (int i = n - 1; i >= 0; i--) {
-                if (digits[i] < 9) {
-                    digits[i]++;
-                    return digits;
-                }
-                digits[i] = 0;
+    static int[] plus(int[] digits) {
+        int n = digits.length;
+        for (int i = n - 1; i >= 0; i--) {
+            if (digits[i] < 9) {
+                digits[i]++;
+                return digits;
             }
-            int[] newNumber = new int[n + 1];// when a new array is created...all the elements are initialized to 0...hence extra 0 is automatically added at the end of array
-            newNumber[0] = 1;
-            return newNumber;
+            digits[i] = 0;
         }
+        int[] newNumber = new int[n + 1];// when a new array is created...all the elements are initialized to 0...hence
+                                         // extra 0 is automatically added at the end of array
+        newNumber[0] = 1;
+        return newNumber;
     }
+}

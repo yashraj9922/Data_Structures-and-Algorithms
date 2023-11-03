@@ -2,7 +2,6 @@ package PS;
 
 // Leetcode 27. Remove Element
 
-
 public class removeSameElements {
     public int removeElement(int[] nums, int val) {
         int counter = 0;

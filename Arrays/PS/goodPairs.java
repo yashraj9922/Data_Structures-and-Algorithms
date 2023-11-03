@@ -16,7 +16,6 @@ public class goodPairs {
         return counter;
     }
 
-
     public static void main(String[] args) {
         goodPairs s = new goodPairs();
         int[] nums = { 1, 2, 3, 1, 1, 3 };

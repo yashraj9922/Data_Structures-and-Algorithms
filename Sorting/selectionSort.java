@@ -15,7 +15,7 @@ public class selectionSort {
             System.out.print("Element " + (i + 1) + ": ");
             arr[i] = sc.nextInt();
         }
-        
+
         selection(arr);
         printArray(arr);
     }

@@ -13,9 +13,8 @@ public class concatenationArray {
         return arr;
     }
 
-
     public static void main(String[] args) {
-        concatenationArray  s = new concatenationArray ();
+        concatenationArray s = new concatenationArray();
         int[] nums = { 1, 2, 1 };
         int[] arr = s.getConcatenation(nums);
         for (int i = 0; i < arr.length; i++) {

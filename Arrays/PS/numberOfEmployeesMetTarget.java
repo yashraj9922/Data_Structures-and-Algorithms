@@ -13,7 +13,6 @@ public class numberOfEmployeesMetTarget {
         return counter;
     }
 
-
     public static void main(String[] args) {
         numberOfEmployeesMetTarget s = new numberOfEmployeesMetTarget();
         int[] hours = { 80, 80, 80, 80, 80 };

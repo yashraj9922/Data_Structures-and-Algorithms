@@ -26,9 +26,11 @@ public class peakIndexMountainArray {
                 // you are in ascending part of an array
                 start = mid + 1; // because we know that mod + 1 element is greater than mid element
             }
-        } // at the end start == end and pointing to the largest number because of the two checks above
+        } // at the end start == end and pointing to the largest number because of the two
+          // checks above
           // start and end are always trying to find max element in above two checks
-          // hence, when they are pointing to just one element, that is what the checks says
+          // hence, when they are pointing to just one element, that is what the checks
+          // says
         return start;// or return end as both are equal
     }
 }

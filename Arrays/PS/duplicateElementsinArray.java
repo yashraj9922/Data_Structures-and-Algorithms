@@ -20,7 +20,6 @@ public class duplicateElementsinArray {
         return i + 1;
     }
 
-
     public static void main(String[] args) {
         duplicateElementsinArray s = new duplicateElementsinArray();
         int[] nums = { 1, 1, 2 };

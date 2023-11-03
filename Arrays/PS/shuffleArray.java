@@ -12,10 +12,8 @@ public class shuffleArray {
         return arr;
     }
 
-
-
     public static void main(String[] args) {
-       shuffleArray s = new shuffleArray();
+        shuffleArray s = new shuffleArray();
         int[] nums = { 2, 5, 1, 3, 4, 7 };
         int n = 3;
         int[] arr = s.shuffle(nums, n);

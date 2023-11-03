@@ -5,7 +5,7 @@ package PS;
 import java.util.Arrays;
 
 public class containsDuplicate {
-    public boolean containsDuplicate(int[] nums) {
+    public boolean containDuplicate(int[] nums) {
         Arrays.sort(nums);
         int counter = 0;
         for (int i = 0; i < nums.length - 1; i++) {
@@ -17,11 +17,9 @@ public class containsDuplicate {
         return counter != nums.length - 1;
     }
 
-
-
     public static void main(String[] args) {
         containsDuplicate s = new containsDuplicate();
         int[] nums = { 1, 2, 3, 1 };
-        System.out.println(s.containsDuplicate(nums));
+        System.out.println(s.containDuplicate(nums));
     }
 }

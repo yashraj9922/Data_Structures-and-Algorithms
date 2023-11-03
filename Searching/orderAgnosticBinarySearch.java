@@ -3,8 +3,9 @@ public class orderAgnosticBinarySearch {
     // here sorted is non-decreasing order...we need to change code for
     // non-increasing order
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5, 5 }; //ascending order sorted...to know that array is ascending order sorted if(arr[0]<arr[arr.length - 1])
-        int [] arr1 = {5,4,3,2,1}; // descending order sorted
+        int[] arr = { 1, 2, 3, 4, 5, 5 }; // ascending order sorted...to know that array is ascending order sorted
+                                          // if(arr[0]<arr[arr.length - 1])
+        int[] arr1 = { 5, 4, 3, 2, 1 }; // descending order sorted
         int target = 5;
         int ans = binarysearch(arr, target);
         int ans1 = binarysearch(arr1, target);
