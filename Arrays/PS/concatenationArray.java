@@ -2,7 +2,7 @@ package PS;
 
 // Leetcode 1929. Concatenation of Array
 
-class Solution2 {
+public class concatenationArray {
     public int[] getConcatenation(int[] nums) {
         int n = nums.length;
         int[] arr = new int[2 * n];
@@ -12,11 +12,10 @@ class Solution2 {
         }
         return arr;
     }
-}
 
-public class concatenationArray {
+
     public static void main(String[] args) {
-        Solution2 s = new Solution2();
+        concatenationArray  s = new concatenationArray ();
         int[] nums = { 1, 2, 1 };
         int[] arr = s.getConcatenation(nums);
         for (int i = 0; i < arr.length; i++) {

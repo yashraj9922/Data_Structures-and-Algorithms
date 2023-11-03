@@ -2,7 +2,8 @@ package PS;
 
 // Leetcode 27. Remove Element
 
-class Solution9 {
+
+public class removeSameElements {
     public int removeElement(int[] nums, int val) {
         int counter = 0;
         for (int i = 0; i < nums.length; i++) {
@@ -13,11 +14,9 @@ class Solution9 {
         }
         return counter;
     }
-}
 
-public class removeSameElements {
     public static void main(String[] args) {
-        Solution9 s = new Solution9();
+        removeSameElements s = new removeSameElements();
         int[] nums = { 3, 2, 2, 3 };
         int val = 3;
         System.out.println(s.removeElement(nums, val));

@@ -4,7 +4,7 @@ package PS;
 
 import java.util.Arrays;
 
-class Solution3 {
+public class containsDuplicate {
     public boolean containsDuplicate(int[] nums) {
         Arrays.sort(nums);
         int counter = 0;
@@ -16,11 +16,11 @@ class Solution3 {
         }
         return counter != nums.length - 1;
     }
-}
 
-public class containsDuplicate {
+
+
     public static void main(String[] args) {
-        Solution3 s = new Solution3();
+        containsDuplicate s = new containsDuplicate();
         int[] nums = { 1, 2, 3, 1 };
         System.out.println(s.containsDuplicate(nums));
     }

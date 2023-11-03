@@ -2,7 +2,7 @@ package PS;
 
 // Leetcode 121 - Best Time to Buy and Sell Stock
 
-class Solution1 {
+public class buySellStock {
     public int maxProfit(int[] prices) {
         int min = Integer.MAX_VALUE;
         int maxProfit = 0;
@@ -17,11 +17,10 @@ class Solution1 {
         }
         return maxProfit;
     }
-}
 
-public class buySellStock {
+
     public static void main(String[] args) {
-        Solution1 s = new Solution1();
+        buySellStock s = new buySellStock();
         int[] prices = { 7, 1, 5, 3, 6, 4 };
         System.out.println(s.maxProfit(prices));
     }

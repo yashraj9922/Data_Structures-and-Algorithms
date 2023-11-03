@@ -3,7 +3,7 @@ package PS;
 //26. Remove Duplicates from Sorted Array
 //https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
-class Solution1 {
+public class duplicateElementsinArray {
     public int removeDuplicates(int[] nums) {
         int n = nums.length;
         int i = 0;
@@ -19,11 +19,10 @@ class Solution1 {
         }
         return i + 1;
     }
-}
 
-public class duplicateElementsinArray {
+
     public static void main(String[] args) {
-        Solution1 s = new Solution1();
+        duplicateElementsinArray s = new duplicateElementsinArray();
         int[] nums = { 1, 1, 2 };
         int len = s.removeDuplicates(nums);
         for (int i = 0; i < len; i++) {

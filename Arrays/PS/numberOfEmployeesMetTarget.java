@@ -2,7 +2,7 @@ package PS;
 
 // 2798. Number of Employees Who Met the Target
 
-class Solution {
+public class numberOfEmployeesMetTarget {
     public int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
         int counter = 0;
         for (int i = 0; i < hours.length; i++) {
@@ -12,11 +12,10 @@ class Solution {
         }
         return counter;
     }
-}
 
-public class numberOfEmployeesMetTarget {
+
     public static void main(String[] args) {
-        Solution s = new Solution();
+        numberOfEmployeesMetTarget s = new numberOfEmployeesMetTarget();
         int[] hours = { 80, 80, 80, 80, 80 };
         int target = 80;
         System.out.println(s.numberOfEmployeesWhoMetTarget(hours, target));

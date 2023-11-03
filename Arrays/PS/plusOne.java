@@ -3,16 +3,15 @@ package PS;
 
 public class plusOne {
     public static void main(String[] args) {
-        Solution s = new Solution();
         int[] digits = { 9, 9, 9 };
-        int[] ans = s.plusOne(digits);
+        int[] ans = plus(digits);
         for (int i : ans) {
             System.out.print(i + " ");
         }
     }
 
-    static class Solution {
-        public int[] plusOne(int[] digits) {
+
+        static int[] plus(int[] digits) {
             int n = digits.length;
             for (int i = n - 1; i >= 0; i--) {
                 if (digits[i] < 9) {
@@ -26,4 +25,3 @@ public class plusOne {
             return newNumber;
         }
     }
-}

@@ -1,7 +1,7 @@
 package LC;
 
-class Solution {
-    public int lengthOfLastWord(String s) {
+public class lengthOfLastWord {
+    public int lengthLastWord(String s) {
         
         //Count the last word length
         int count = 0;
@@ -23,12 +23,11 @@ class Solution {
         //This will be our answer
         return count;
     }
-}
 
-public class lengthOfLastWord {
+
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        lengthOfLastWord sol = new lengthOfLastWord();
         String s = "Hello World";
-        System.out.println(sol.lengthOfLastWord(s));
+        System.out.println(sol.lengthLastWord(s));
     }
 }
