@@ -31,6 +31,18 @@ public class linkedList {
         size++;
     }
 
+    public void insertAtLast(int value) {
+        if (tail == null) {
+            insertAtFirst(value);
+            return;
+        }
+        Node node = new Node(value);
+        tail.next = node;
+        tail = node;
+
+        size++;
+    }
+
     public void insert(int value, int index) {
         Node node = new Node(value);
         if (index == 0) {
@@ -53,18 +65,6 @@ public class linkedList {
         size++;
     }
 
-    public void insertAtLast(int value) {
-        if (tail == null) {
-            insertAtFirst(value);
-            return;
-        }
-        Node node = new Node(value);
-        tail.next = node;
-        tail = node;
-
-        size++;
-    }
-
     public Node deleteAtFirst() {
         if (head == null) {
             return null;
@@ -76,7 +76,7 @@ public class linkedList {
         return temp;
     }
 
-    public Node get(int index) {
+    public Node getNode(int index) {
         Node node = head;
         int idx = 0;
         while (idx < index) {
@@ -84,6 +84,35 @@ public class linkedList {
             idx++;
         }
         return node;
+    }
+
+    public Node deleteAtLast() {
+        if (size <= 1) {
+            return deleteAtFirst();
+        }
+
+        Node secondLast = getNode(size - 2);
+        Node temp = tail;
+        tail = secondLast;
+        tail.next = null;
+        size--;
+        return temp;
+    }
+
+    public Node deleteNode(int index) {
+        if (index == 0) {
+            return deleteAtFirst();
+        }
+        if (index == size - 1) {
+            return deleteAtLast();
+        }
+
+        Node prevNode = getNode(index - 1);
+        Node currentNode = prevNode.next;
+        prevNode.next = currentNode.next;
+        currentNode.next = null;
+        size--;
+        return currentNode;
     }
 
     public Node findNode(int value) {
@@ -95,35 +124,6 @@ public class linkedList {
             node = node.next;
         }
         return null;
-    }
-
-    public Node deleteAtLast() {
-        if (size <= 1) {
-            return deleteAtFirst();
-        }
-
-        Node secondLast = get(size - 2);
-        Node temp = tail;
-        tail = secondLast;
-        tail.next = null;
-        size--;
-        return temp;
-    }
-
-    public Node delNode(int index) {
-        if (index == 0) {
-            return deleteAtFirst();
-        }
-        if (index == size - 1) {
-            return deleteAtLast();
-        }
-
-        Node prevNode = get(index - 1);
-        Node currentNode = prevNode.next;
-        prevNode.next = currentNode.next;
-        currentNode.next = null;
-        size--;
-        return currentNode;
     }
 
     public void displayLL() {
@@ -154,8 +154,8 @@ public class linkedList {
         System.out.println("ll.deleteAtLast()");
         ll.deleteAtLast();
         ll.displayLL();
-        System.out.println("ll.delNode(2)");
-        ll.delNode(2);
+        System.out.println("ll.deleteNode(2)");
+        ll.deleteNode(2);
         ll.displayLL();
         System.out.println("ll.findNode(100)");
         System.out.println(ll.findNode(100));
