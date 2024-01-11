@@ -58,21 +58,21 @@ public class mergeSort {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the size of the Array: ");
+            int size = sc.nextInt();
 
-        System.out.println("Enter the size of the Array: ");
-        int size = sc.nextInt();
+            int arr[] = new int[size];
 
-        int arr[] = new int[size];
+            System.out.println("Enter elements of the array: ");
+            for (int i = 0; i < arr.length; i++) {
+                System.out.print("Element " + (i + 1) + ": ");
+                arr[i] = sc.nextInt();
+            }
 
-        System.out.println("Enter elements of the array: ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print("Element " + (i + 1) + ": ");
-            arr[i] = sc.nextInt();
+            sort(arr, 0, arr.length - 1);
+            System.out.println("Sorted array:");
+            printArray(arr);
         }
-
-        sort(arr, 0, arr.length - 1);
-        System.out.println("Sorted array:");
-        printArray(arr);
     }
 }

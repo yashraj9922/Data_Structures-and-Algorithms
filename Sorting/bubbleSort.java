@@ -2,21 +2,21 @@ import java.util.Scanner;
 
 public class bubbleSort {
     public static void main(String[] args) {
-        // int[] arr = { 5, 1, 4, 2, 8 };
-        Scanner sc = new Scanner(System.in);
+        try (// int[] arr = { 5, 1, 4, 2, 8 };
+        Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the size of an Array: ");
+            int size = sc.nextInt();
 
-        System.out.println("Enter the size of an Array: ");
-        int size = sc.nextInt();
+            int arr[] = new int[size];
 
-        int arr[] = new int[size];
-
-        System.out.println("Enter elements of an array: ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print("Element " + (i + 1) + ": ");
-            arr[i] = sc.nextInt();
+            System.out.println("Enter elements of an array: ");
+            for (int i = 0; i < arr.length; i++) {
+                System.out.print("Element " + (i + 1) + ": ");
+                arr[i] = sc.nextInt();
+            }
+            bubble(arr);
+            printArray(arr);
         }
-        bubble(arr);
-        printArray(arr);
     }
 
     static void bubble(int[] arr) {

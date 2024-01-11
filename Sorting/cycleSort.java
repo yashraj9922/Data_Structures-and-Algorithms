@@ -18,19 +18,19 @@ public class cycleSort {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the size of an Array: ");
+            int size = sc.nextInt();
 
-        System.out.println("Enter the size of an Array: ");
-        int size = sc.nextInt();
+            int arr[] = new int[size];
 
-        int arr[] = new int[size];
-
-        System.out.println("Enter elements of an array: ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print("Element " + (i + 1) + ": ");
-            arr[i] = sc.nextInt();
+            System.out.println("Enter elements of an array: ");
+            for (int i = 0; i < arr.length; i++) {
+                System.out.print("Element " + (i + 1) + ": ");
+                arr[i] = sc.nextInt();
+            }
+            cycle(arr);
+            System.out.println(Arrays.toString(arr));
         }
-        cycle(arr);
-        System.out.println(Arrays.toString(arr));
     }
 }

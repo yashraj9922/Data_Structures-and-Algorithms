@@ -37,20 +37,20 @@ public class quickSort {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the size of an Array: ");
+            int size = sc.nextInt();
 
-        System.out.println("Enter the size of an Array: ");
-        int size = sc.nextInt();
+            int arr[] = new int[size];
 
-        int arr[] = new int[size];
-
-        System.out.println("Enter elements of an array: ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print("Element " + (i + 1) + ": ");
-            arr[i] = sc.nextInt();
+            System.out.println("Enter elements of an array: ");
+            for (int i = 0; i < arr.length; i++) {
+                System.out.print("Element " + (i + 1) + ": ");
+                arr[i] = sc.nextInt();
+            }
+            int n = arr.length;
+            quick(arr, 0, n - 1);
+            System.out.println(Arrays.toString(arr));
         }
-        int n = arr.length;
-        quick(arr, 0, n - 1);
-        System.out.println(Arrays.toString(arr));
     }
 }

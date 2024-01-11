@@ -32,14 +32,14 @@ public class linearSearch {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter key: ");
+            int key = sc.nextInt();
 
-        System.out.println("Enter key: ");
-        int key = sc.nextInt();
+            int arr[] = { 1, 2, 45, 6, 7, 78, 4, 34, 86, 23, 60 };
+            int result = linearsearch(arr, key);
 
-        int arr[] = { 1, 2, 45, 6, 7, 78, 4, 34, 86, 23, 60 };
-        int result = linearsearch(arr, key);
-
-        System.out.println(result);
+            System.out.println(result);
+        }
     }
 }
