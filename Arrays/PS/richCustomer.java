@@ -1,3 +1,5 @@
+package PS;
+
 public class richCustomer {
     // 1672. Richest Customer Wealth
     // leetcode: https://leetcode.com/problems/richest-customer-wealth/

@@ -1,3 +1,5 @@
+package PS;
+
 // Problem: Build Array from Permutation Leetcode 1920 (Easy) Link: https://leetcode.com/problems/build-array-from-permutation/
 public class buildArrayFromPermuntation {
     class Solution {
